@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "815639472357",
+    "firebase_url": "https://middle-63444.firebaseio.com",
+    "project_id": "middle-63444",
+    "storage_bucket": "middle-63444.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:815639472357:android:c1f246c2ceb74fdbf08c0c",
+        "android_client_info": {
+          "package_name": "com.example.middle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "815639472357-r4sj9v3d8hglkhmk6h9ecn3he65oa1j2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRKRUN7KUvMs8GZmCPcd-uGWrzUmtAMPE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "815639472357-r4sj9v3d8hglkhmk6h9ecn3he65oa1j2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
