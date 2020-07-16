@@ -24,6 +24,7 @@
         app:layout_constraintTop_toTopOf="@id/imagenPerfil"/>
     
     <TextView
+        android:id="@+id/nombre"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -35,10 +36,11 @@
         app:layout_constraintStart_toEndOf="@id/imagenPerfil"/>
     
     <TextView
+        android:id="@+id/tipo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:text="@string/verificado"
+        android:text="@string/usuario"
         android:textColor="@color/colorGreen"
         android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@id/imagenPerfil"
