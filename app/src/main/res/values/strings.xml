@@ -2,4 +2,7 @@
     <string name="app_name">Middle</string>
     <string name="jesus_ortiz">Jesus Ortiz</string>
     <string name="verificado">verificado</string>
+    <string name="inicio">Inicio</string>
+    <string name="solicitud">Solicitud</string>
+    <string name="perfil">Perfil</string>
 </resources>

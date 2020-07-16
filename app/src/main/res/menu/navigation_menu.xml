@@ -13,10 +13,6 @@
         android:id="@+id/menuSolicitud"
         android:icon="@drawable/ic_shopping_cart"
         android:title="Solicitud" />
-    <item
-        android:id="@+id/menuNotificaciones"
-        android:icon="@drawable/ic_shopping_cart"
-        android:title="Notificaciones" />
 
 
 </menu>
