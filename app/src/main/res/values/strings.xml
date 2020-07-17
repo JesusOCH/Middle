@@ -11,4 +11,8 @@
     <string name="ingresa">Ingresa</string>
     <string name="you_email_com">you@email.com</string>
     <string name="email">Email</string>
+    <string name="password_hint">****************</string>
+    <string name="password">password</string>
+    <string name="olvidaste_tu_contrase_a">¿Olvidaste tu Contraseña?</string>
+    <string name="ingresar">Ingresar</string>
 </resources>
