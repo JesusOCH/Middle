@@ -15,4 +15,12 @@
     <string name="password">password</string>
     <string name="olvidaste_tu_contrase_a">¿Olvidaste tu Contraseña?</string>
     <string name="ingresar">Ingresar</string>
+    <string name="no_tienes_cuenta">¿No tienes Cuenta?</string>
+    <string name="crear_cuenta">Create una cuenta</string>
+    <string name="eres_proveedor">¿Eres Proveedor?</string>
+    <string name="ingresa_aqui">Ingresa Aqui</string>
+    <string name="create_una_cuenta">Create una Cuenta</string>
+    <string name="crear_una_nueva_cuenta">Crear una nueva cuenta</string>
+    <string name="jesus_ortiz">Jesus Ortiz</string>
+    <string name="username">Username</string>
 </resources>

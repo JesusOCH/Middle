@@ -6,7 +6,7 @@
     <color name="coloPrimaryText">#212121</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorGreen">#32CD32</color>
-    <color name="colorTestSecondary">#757575</color>
+    <color name="colorTextSecondary">#757575</color>
     <color name="colorDivider">#BDBDBD</color>
 
     <color name="start">#00FCFF</color>
