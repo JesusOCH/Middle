@@ -20,5 +20,18 @@ public class SignIn extends AppCompatActivity {
 
             }
         });
+        findViewById(R.id.buttonIngresar).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),MainActivity.class
+                ));
+            }
+        });
+        findViewById(R.id.textLoginProveedor).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), SignIn_Proveedor.class));
+            }
+        });
     }
 }

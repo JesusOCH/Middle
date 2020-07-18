@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorWhite"
-    tools:context=".SignIn">
+    tools:context=".SignIn_Proveedor">
 
     <TextView
         android:id="@+id/textTitle"
@@ -15,7 +15,7 @@
         android:gravity="center_vertical"
         android:paddingStart="10dp"
         android:paddingEnd="10dp"
-        android:text="Middle - Usuario"
+        android:text="Miiddle - Proveedor"
         android:textColor="@color/colorWhite"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -210,7 +210,7 @@
                     android:textSize="17sp" />
 
                 <TextView
-                    android:id="@+id/textCrearCuenta"
+                    android:id="@+id/textCrearCuentaProveedor"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="4dp"
@@ -233,12 +233,12 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/eres_proveedor"
+                    android:text="¿Eres Usuario?"
                     android:textColor="@color/colorTextSecondary"
                     android:textSize="17sp" />
 
                 <TextView
-                    android:id="@+id/textLoginProveedor"
+                    android:id="@+id/textLoginUsuario"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="4dp"

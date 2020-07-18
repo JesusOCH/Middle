@@ -1,14 +1,13 @@
 <resources>
     <string name="app_name">Middle</string>
     <string name="jesus_ortiz">Jesus Ortiz</string>
-    <string name="verificado">verificado</string>
+    <string name="proveedor">proveedor</string>
     <string name="inicio">Inicio</string>
     <string name="solicitud">Solicitud</string>
     <string name="perfil">Perfil</string>
     <string name="usuario">Usuario</string>
     <string name="middle">Middle</string>
     <string name="bienvenido">Bienvenido</string>
-    <string name="ingresa">Ingresa</string>
     <string name="you_email_com">you@email.com</string>
     <string name="email">Email</string>
     <string name="password_hint">****************</string>
@@ -16,11 +15,20 @@
     <string name="olvidaste_tu_contrase_a">¿Olvidaste tu Contraseña?</string>
     <string name="ingresar">Ingresar</string>
     <string name="no_tienes_cuenta">¿No tienes Cuenta?</string>
-    <string name="crear_cuenta">Create una cuenta</string>
+    <string name="crear_cuenta">Crear cuenta</string>
     <string name="eres_proveedor">¿Eres Proveedor?</string>
     <string name="ingresa_aqui">Ingresa Aqui</string>
     <string name="create_una_cuenta">Create una Cuenta</string>
-    <string name="crear_una_nueva_cuenta">Crear una nueva cuenta</string>
-    <string name="jesus_ortiz">Jesus Ortiz</string>
+    <string name="crear_una_nueva_cuenta">Create una nueva cuenta</string>
     <string name="username">Username</string>
+    <string name="nombres_y_apellidos">Nombres y Apellidos</string>
+    <string name="direccion">Direccion</string>
+    <string name="avenida_espinar_403_mollendo">Avenida Espinar #403 Mollendo</string>
+    <string name="edad">Edad</string>
+    <string name="_22">22</string>
+    <string name="sexo">Sexo</string>
+    <string name="ya_tienes_cuenta">¿Ya tienes cuenta?</string>
+    <string name="rubro">Rubro</string>
+    <string name="masajes">Masajes</string>
+    <string name="ofrece">Ofrece</string>
 </resources>
