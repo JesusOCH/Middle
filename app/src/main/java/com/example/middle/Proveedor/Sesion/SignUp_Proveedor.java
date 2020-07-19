@@ -1,9 +1,11 @@
-package com.example.middle;
+package com.example.middle.Proveedor.Sesion;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+
+import com.example.middle.R;
 
 public class SignUp_Proveedor extends AppCompatActivity {
 

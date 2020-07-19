@@ -1,10 +1,15 @@
-package com.example.middle;
+package com.example.middle.Usuario.Sesion;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import com.example.middle.MainActivity;
+import com.example.middle.R;
+import com.example.middle.Proveedor.Sesion.SignIn_Proveedor;
+import com.example.middle.Usuario.UsuarioActivity;
 
 public class SignIn extends AppCompatActivity {
 
@@ -20,10 +25,10 @@ public class SignIn extends AppCompatActivity {
 
             }
         });
-        findViewById(R.id.buttonIngresar).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.buttonIngresarUsuario).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),MainActivity.class
+                startActivity(new Intent(getApplicationContext(), UsuarioActivity.class
                 ));
             }
         });
