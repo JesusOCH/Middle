@@ -24,7 +24,7 @@ public class ProveedorActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_proveedor);
 
-        final DrawerLayout drawerLayout = findViewById(R.id.drawerLayout);
+        final DrawerLayout drawerLayout = findViewById(R.id.drawerLayout_Proveedor);
 
         findViewById(R.id.imageMenu).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,10 +33,10 @@ public class ProveedorActivity extends AppCompatActivity {
             }
         });
 
-        NavigationView navigationView = findViewById(R.id.navigationView);
+        NavigationView navigationView = findViewById(R.id.navigationView_Proveedor);
         navigationView.setItemIconTintList(null);
 
-        NavController navController = Navigation.findNavController(this, R.id.navHostFragment);
+        NavController navController = Navigation.findNavController(this, R.id.navHostFragment_Proveedor);
         NavigationUI.setupWithNavController(navigationView, navController);
 
         final TextView textTitle = findViewById(R.id.textTitle);

@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Middle</string>
     <string name="jesus_ortiz">Jesus Ortiz</string>
-    <string name="proveedor">proveedor</string>
+    <string name="proveedor">Proveedor</string>
     <string name="inicio">Inicio</string>
     <string name="solicitud">Solicitud</string>
     <string name="perfil">Perfil</string>
@@ -31,4 +31,6 @@
     <string name="rubro">Rubro</string>
     <string name="masajes">Masajes</string>
     <string name="ofrece">Ofrece</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

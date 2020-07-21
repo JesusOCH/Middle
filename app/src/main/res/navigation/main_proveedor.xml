@@ -7,12 +7,12 @@
 
     <fragment
         android:id="@+id/menuInicio"
-        android:name="com.example.middle.Proveedor.Fragments.InicioFragment"
+        android:name="com.example.middle.Proveedor.Fragments.InicioFragment_Proveedor"
         android:label="Inicio"
         tools:layout="@layout/fragment_inicio" />
     <fragment
         android:id="@+id/menuPerfil"
-        android:name="com.example.middle.Proveedor.Fragments.PerfilFragment"
+        android:name="com.example.middle.Proveedor.Fragments.PerfilFragment_Proveedor"
         android:label="Perfil"
         tools:layout="@layout/fragment_perfil" />
     <fragment

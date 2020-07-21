@@ -40,7 +40,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:text="@string/usuario"
+        android:text="@string/proveedor"
         android:textColor="@color/colorGreen"
         android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@id/imagenPerfil"
