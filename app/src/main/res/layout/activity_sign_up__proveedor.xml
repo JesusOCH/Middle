@@ -65,6 +65,7 @@
                     android:tint="@color/colorAccent" />
 
                 <EditText
+                    android:id="@+id/nombreProveedor"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
                     android:background="@null"
@@ -122,6 +123,7 @@
                     android:tint="@color/colorAccent" />
 
                 <EditText
+                    android:id="@+id/emailProveedor"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
                     android:background="@null"
@@ -179,6 +181,7 @@
                     android:tint="@color/colorAccent" />
 
                 <EditText
+                    android:id="@+id/passwordProveedor"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
                     android:background="@null"
@@ -236,6 +239,7 @@
                     android:tint="@color/colorAccent" />
 
                 <EditText
+                    android:id="@+id/direccionProveedor"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
                     android:background="@null"
@@ -293,13 +297,14 @@
                     android:tint="@color/colorAccent" />
 
                 <EditText
+                    android:id="@+id/rubroProveedor"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
                     android:background="@null"
                     android:hint="@string/masajes"
                     android:imeOptions="actionNext"
                     android:importantForAutofill="auto"
-                    android:inputType="number"
+                    android:inputType="text"
                     android:paddingStart="10dp"
                     android:paddingEnd="10dp"
                     android:textColor="@color/colorPrimary"
@@ -350,7 +355,7 @@
                     android:tint="@color/colorAccent" />
 
                 <RadioGroup
-                    android:id="@+id/opciones"
+                    android:id="@+id/opciones_ofrece"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -391,6 +396,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <Button
+            android:id="@+id/crearCuentaProveedor"
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:layout_marginStart="30dp"

@@ -19,6 +19,7 @@ import com.google.android.material.navigation.NavigationView;
 
 public class UsuarioActivity extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
