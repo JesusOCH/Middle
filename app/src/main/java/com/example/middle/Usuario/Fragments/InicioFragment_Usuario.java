@@ -1,4 +1,4 @@
-package com.example.middle.Usuario.Inicio;
+package com.example.middle.Usuario.Fragments;
 
 import android.os.Bundle;
 
@@ -12,10 +12,10 @@ import com.example.middle.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link PerfilFragment_Usuario#newInstance} factory method to
+ * Use the {@link InicioFragment_Usuario#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class PerfilFragment_Usuario extends Fragment {
+public class InicioFragment_Usuario extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -26,7 +26,7 @@ public class PerfilFragment_Usuario extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public PerfilFragment_Usuario() {
+    public InicioFragment_Usuario() {
         // Required empty public constructor
     }
 
@@ -36,11 +36,11 @@ public class PerfilFragment_Usuario extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment PerfilFragment_Usuario.
+     * @return A new instance of fragment InicioFragment_Usuario.
      */
     // TODO: Rename and change types and number of parameters
-    public static PerfilFragment_Usuario newInstance(String param1, String param2) {
-        PerfilFragment_Usuario fragment = new PerfilFragment_Usuario();
+    public static InicioFragment_Usuario newInstance(String param1, String param2) {
+        InicioFragment_Usuario fragment = new InicioFragment_Usuario();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -61,6 +61,6 @@ public class PerfilFragment_Usuario extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_perfil__usuario, container, false);
+        return inflater.inflate(R.layout.fragment_inicio__usuario, container, false);
     }
 }

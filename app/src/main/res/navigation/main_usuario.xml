@@ -7,12 +7,17 @@
 
     <fragment
         android:id="@+id/menuInicio_Usuario"
-        android:name="com.example.middle.Usuario.Inicio.InicioFragment_Usuario"
+        android:name="com.example.middle.Usuario.Fragments.InicioFragment_Usuario"
         android:label="Inicio"
         tools:layout="@layout/fragment_inicio__usuario" />
     <fragment
         android:id="@+id/menuPerfil_Usuario"
-        android:name="com.example.middle.Usuario.Inicio.PerfilFragment_Usuario"
+        android:name="com.example.middle.Usuario.Fragments.PerfilFragment_Usuario"
         android:label="Perfil"
         tools:layout="@layout/fragment_perfil__usuario" />
+    <fragment
+        android:id="@+id/menuSalir_Usuario"
+        android:name="com.example.middle.Usuario.Fragments.SalirFragment_Usuario"
+        android:label="Cerrar Sesion"
+        tools:layout="@layout/fragment_salir__usuario" />
 </navigation>

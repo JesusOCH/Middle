@@ -2,17 +2,21 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/menuPerfil"
+        android:id="@+id/menuPerfil_Proveedor"
         android:icon="@drawable/ic_shopping_cart"
         android:title="Perfil" />
     <item
-        android:id="@+id/menuInicio"
+        android:id="@+id/menuInicio_Proveedor"
         android:icon="@drawable/ic_shopping_cart"
         android:title="Inicio" />
     <item
-        android:id="@+id/menuSolicitud"
+        android:id="@+id/menuSolicitud_Proveedor"
         android:icon="@drawable/ic_shopping_cart"
         android:title="Solicitud" />
+    <item
+        android:id="@+id/menuSalir_Proveedor"
+        android:icon="@drawable/ic_account"
+        android:title="@string/cerrar_sesion" />
 
 
 </menu>

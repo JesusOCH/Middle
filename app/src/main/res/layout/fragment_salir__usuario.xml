@@ -3,12 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Usuario.Fragments.InicioFragment_Usuario">
+    tools:context=".Usuario.Fragments.SalirFragment_Usuario">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/inicio"
+        android:text="@string/cerrar_sesion"
         android:layout_gravity="center"
         android:textSize="20sp"/>
 

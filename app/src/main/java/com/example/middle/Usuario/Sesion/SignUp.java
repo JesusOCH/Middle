@@ -12,9 +12,9 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.middle.Proveedor.ProveedorActivity;
 import com.example.middle.R;
 import com.example.middle.Usuario.Model.Usuario;
+import com.example.middle.Usuario.UsuarioActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -111,7 +111,7 @@ public class SignUp extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<Void> task2) {
                             if (task2.isSuccessful()) {
-                                startActivity(new Intent(getApplicationContext(), ProveedorActivity.class));
+                                startActivity(new Intent(getApplicationContext(), UsuarioActivity.class));
                                 finish();
                             } else {
                                 Toast.makeText(SignUp.this, "No se pudieron crear los datos de manera correcta", Toast.LENGTH_SHORT).show();

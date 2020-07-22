@@ -8,4 +8,8 @@
         android:id="@+id/menuInicio_Usuario"
         android:icon="@drawable/ic_shopping_cart"
         android:title="Inicio" />
+    <item
+        android:id="@+id/menuSalir_Usuario"
+        android:icon="@drawable/ic_account"
+        android:title="@string/cerrar_sesion"/>
 </menu>

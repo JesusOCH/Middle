@@ -3,21 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    app:startDestination="@id/menuInicio">
+    app:startDestination="@id/menuInicio_Proveedor">
 
     <fragment
-        android:id="@+id/menuInicio"
+        android:id="@+id/menuInicio_Proveedor"
         android:name="com.example.middle.Proveedor.Fragments.InicioFragment_Proveedor"
         android:label="Inicio"
         tools:layout="@layout/fragment_inicio" />
     <fragment
-        android:id="@+id/menuPerfil"
+        android:id="@+id/menuPerfil_Proveedor"
         android:name="com.example.middle.Proveedor.Fragments.PerfilFragment_Proveedor"
         android:label="Perfil"
         tools:layout="@layout/fragment_perfil" />
     <fragment
-        android:id="@+id/menuSolicitud"
+        android:id="@+id/menuSolicitud_Proveedor"
         android:name="com.example.middle.Proveedor.Fragments.SolicitudFragment"
         android:label="Solicitud"
         tools:layout="@layout/fragment_solicitud" />
+    <fragment
+        android:id="@+id/menuSalir_Proveedor"
+        android:name="com.example.middle.Proveedor.Fragments.SalirFragment_Proveedor"
+        android:label="@string/cerrar_sesion"
+        tools:layout="@layout/fragment_salir__proveedor" />
 </navigation>
