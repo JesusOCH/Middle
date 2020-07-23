@@ -2,13 +2,21 @@ package com.example.middle.Proveedor.Fragments;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.example.middle.R;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -16,6 +24,12 @@ import com.example.middle.R;
  * create an instance of this fragment.
  */
 public class PerfilFragment_Proveedor extends Fragment {
+
+    private TextView nombreProveedor;
+    private TextView emailProveedor;
+
+    FirebaseAuth firebaseAuth;
+    DatabaseReference databaseReference;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -51,6 +65,8 @@ public class PerfilFragment_Proveedor extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        databaseReference = FirebaseDatabase.getInstance().getReference();
+        firebaseAuth = FirebaseAuth.getInstance();
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
@@ -60,7 +76,31 @@ public class PerfilFragment_Proveedor extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_perfil, container, false);
+        View view = inflater.inflate(R.layout.fragment_perfil__usuario, container, false);
+        nombreProveedor = (TextView) view.findViewById(R.id.nombreUsuario);
+        emailProveedor = (TextView) view.findViewById(R.id.emailUsuario);
+        getUserInfo();
+        return view;
+    }
+
+    private void getUserInfo() {
+        String id = firebaseAuth.getCurrentUser().getUid();
+        databaseReference.child("Proveedores").child(id).addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                if(dataSnapshot.exists()){
+                    String name = dataSnapshot.child("nombre").getValue().toString();
+                    String email = dataSnapshot.child("email").getValue().toString();
+
+                    nombreProveedor.setText(name);
+                    emailProveedor.setText(email);
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
     }
 }

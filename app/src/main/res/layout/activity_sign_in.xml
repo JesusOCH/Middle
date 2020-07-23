@@ -81,6 +81,7 @@
                         android:tint="@color/colorAccent" />
 
                     <EditText
+                        android:id="@+id/emailUsuario_Ingreso"
                         android:layout_width="match_parent"
                         android:layout_height="55dp"
                         android:background="@null"
@@ -138,6 +139,7 @@
                         android:tint="@color/colorAccent" />
 
                     <EditText
+                        android:id="@+id/passwordUsuario_Ingreso"
                         android:layout_width="match_parent"
                         android:layout_height="55dp"
                         android:background="@null"

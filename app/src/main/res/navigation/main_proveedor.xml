@@ -9,12 +9,12 @@
         android:id="@+id/menuInicio_Proveedor"
         android:name="com.example.middle.Proveedor.Fragments.InicioFragment_Proveedor"
         android:label="Inicio"
-        tools:layout="@layout/fragment_inicio" />
+        tools:layout="@layout/fragment_inicio_proveedor" />
     <fragment
         android:id="@+id/menuPerfil_Proveedor"
         android:name="com.example.middle.Proveedor.Fragments.PerfilFragment_Proveedor"
         android:label="Perfil"
-        tools:layout="@layout/fragment_perfil" />
+        tools:layout="@layout/fragment_perfil_proveedor" />
     <fragment
         android:id="@+id/menuSolicitud_Proveedor"
         android:name="com.example.middle.Proveedor.Fragments.SolicitudFragment"
