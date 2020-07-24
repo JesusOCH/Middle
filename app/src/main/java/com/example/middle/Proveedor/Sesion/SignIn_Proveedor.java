@@ -66,6 +66,12 @@ public class SignIn_Proveedor extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(), SignIn.class));
             }
         });
+        findViewById(R.id.resetPasswordProveedor).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), ResetPassword_Proveedor.class));
+            }
+        });
 
     }
 

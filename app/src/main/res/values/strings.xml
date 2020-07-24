@@ -36,4 +36,7 @@
     <string name="masculino">Masculino</string>
     <string name="femenino">Femenino</string>
     <string name="cerrar_sesion">Cerrar Sesion</string>
+    <string name="reestablecer_contrase_a">Reestablecer Contraseña</string>
+    <string name="ingresa_tu_email">Ingresa tu email</string>
+    <string name="cambiar_contrase_a">Cambiar Contraseña</string>
 </resources>
