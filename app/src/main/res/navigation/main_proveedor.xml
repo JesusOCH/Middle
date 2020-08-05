@@ -8,17 +8,17 @@
     <fragment
         android:id="@+id/menuInicio_Proveedor"
         android:name="com.example.middle.Proveedor.Fragments.InicioFragment_Proveedor"
-        android:label="Inicio"
+        android:label="@string/inicio"
         tools:layout="@layout/fragment_inicio_proveedor" />
     <fragment
         android:id="@+id/menuPerfil_Proveedor"
         android:name="com.example.middle.Proveedor.Fragments.PerfilFragment_Proveedor"
-        android:label="Perfil"
+        android:label="@string/perfil"
         tools:layout="@layout/fragment_perfil_proveedor" />
     <fragment
         android:id="@+id/menuSolicitud_Proveedor"
         android:name="com.example.middle.Proveedor.Fragments.SolicitudFragment"
-        android:label="Solicitud"
+        android:label="@string/solicitud"
         tools:layout="@layout/fragment_solicitud" />
     <fragment
         android:id="@+id/menuSalir_Proveedor"
