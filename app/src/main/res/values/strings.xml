@@ -39,4 +39,7 @@
     <string name="reestablecer_contrase_a">Reestablecer Contraseña</string>
     <string name="ingresa_tu_email">Ingresa tu email</string>
     <string name="cambiar_contrase_a">Cambiar Contraseña</string>
+    <string name="tendencias">Tendencias</string>
+    <string name="servicios">Servicios</string>
+    <string name="productos">Productos</string>
 </resources>

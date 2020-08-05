@@ -18,7 +18,7 @@
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
         app:layout_constraintTop_toTopOf="parent"
-        app:tabIndicatorHeight="15dp"
+        app:tabIndicatorHeight="5dp"
         app:tabMode="fixed"
         app:tabPaddingBottom="8dp"
         app:tabPaddingTop="15dp" />
