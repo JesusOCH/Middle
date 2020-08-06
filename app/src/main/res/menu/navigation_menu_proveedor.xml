@@ -10,10 +10,6 @@
         android:icon="@drawable/ic_shopping_cart"
         android:title="Inicio" />
     <item
-        android:id="@+id/menuSolicitud_Proveedor"
-        android:icon="@drawable/ic_shopping_cart"
-        android:title="Solicitud" />
-    <item
         android:id="@+id/menuSalir_Proveedor"
         android:icon="@drawable/ic_account"
         android:title="@string/cerrar_sesion" />

@@ -16,11 +16,6 @@
         android:label="@string/perfil"
         tools:layout="@layout/fragment_perfil_proveedor" />
     <fragment
-        android:id="@+id/menuSolicitud_Proveedor"
-        android:name="com.example.middle.Proveedor.Fragments.SolicitudFragment"
-        android:label="@string/solicitud"
-        tools:layout="@layout/fragment_solicitud" />
-    <fragment
         android:id="@+id/menuSalir_Proveedor"
         android:name="com.example.middle.Proveedor.Fragments.SalirFragment_Proveedor"
         android:label="@string/cerrar_sesion"

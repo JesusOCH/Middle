@@ -1,13 +1,21 @@
 package com.example.middle.Proveedor.Fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.middle.Proveedor.NewsItems;
+import com.example.middle.Proveedor.NewsItemsAdapter;
 import com.example.middle.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -20,6 +28,7 @@ public class InicioFragment_Proveedor extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+    private FloatingActionButton floatingActionButton;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -60,7 +69,21 @@ public class InicioFragment_Proveedor extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_inicio_proveedor, container, false);
-      
+        View view = inflater.inflate(R.layout.fragment_inicio_proveedor, container, false);
+        floatingActionButton = view.findViewById(R.id.solicitud);
+        floatingActionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getContext(),SolicitudFragment.class));
+            }
+        });
+        RecyclerView recyclerView = view.findViewById(R.id.newsRecyclerView);
+        List<NewsItems> newsItems = new ArrayList<>();
+        for (int i=0;i<15;i++){
+            newsItems.add(new NewsItems("Maquillaje".concat(String.valueOf(i)),"S/15.00"));
+        }
+        recyclerView.setAdapter(new NewsItemsAdapter(newsItems));
+        return view;
+
     }
 }
