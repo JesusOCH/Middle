@@ -33,8 +33,10 @@ public class NewsItemsAdapter extends RecyclerView.Adapter<NewsItemsAdapter.News
 
     @Override
     public void onBindViewHolder(@NonNull NewsItemViewHolder holder, int position) {
+        holder.nombre.setText(newsItems.get(position).getNombre());
         holder.descripcion.setText(newsItems.get(position).getDescripcion());
         holder.precio.setText(newsItems.get(position).getPrecio());
+
 
     }
 
@@ -45,12 +47,14 @@ public class NewsItemsAdapter extends RecyclerView.Adapter<NewsItemsAdapter.News
 
     class NewsItemViewHolder extends RecyclerView.ViewHolder {
 
-        private TextView descripcion, precio;
+        private TextView nombre,descripcion, precio;
 
         NewsItemViewHolder(@NonNull View itemView) {
             super(itemView);
+            nombre = itemView.findViewById(R.id.nombre);
             descripcion = itemView.findViewById(R.id.descripcion);
             precio = itemView.findViewById(R.id.precio);
+
         }
     }
 }

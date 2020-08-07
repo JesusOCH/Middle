@@ -7,6 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.middle.Proveedor.NewsItems;
@@ -74,13 +76,23 @@ public class InicioFragment_Proveedor extends Fragment {
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getContext(),SolicitudFragment.class));
+                // Crear fragmento de tu clase
+                Fragment fragment = new SolicitudFragment();
+// Obtener el administrador de fragmentos a través de la actividad
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+// Definir una transacción
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+// Remplazar el contenido principal por el fragmento
+                fragmentTransaction.replace(R.id.fragmentInicioProveedor, fragment);
+                fragmentTransaction.addToBackStack(null);
+// Cambiar
+                fragmentTransaction.commit();
             }
         });
         RecyclerView recyclerView = view.findViewById(R.id.newsRecyclerView);
         List<NewsItems> newsItems = new ArrayList<>();
         for (int i=0;i<15;i++){
-            newsItems.add(new NewsItems("Maquillaje".concat(String.valueOf(i)),"S/15.00"));
+            newsItems.add(new NewsItems("Maquillaje","Se te arreglara la cara".concat(String.valueOf(i)),"S/15.00"));
         }
         recyclerView.setAdapter(new NewsItemsAdapter(newsItems));
         return view;
