@@ -1,9 +1,9 @@
 package com.example.middle.Proveedor;
 
-public class NewsItems {
+public class NewsItemsProveedor {
     private String descripcion, precio, nombre;
 
-    public NewsItems(String nombre, String descripcion, String precio) {
+    public NewsItemsProveedor(String nombre, String descripcion, String precio) {
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.precio = precio;

@@ -7,12 +7,11 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.middle.Proveedor.NewsItems;
-import com.example.middle.Proveedor.NewsItemsAdapter;
+import com.example.middle.Proveedor.NewsItemsAdapterProveedor;
+import com.example.middle.Proveedor.NewsItemsProveedor;
+import com.example.middle.Proveedor.SolicitudActivity;
 import com.example.middle.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -76,25 +75,15 @@ public class InicioFragment_Proveedor extends Fragment {
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Crear fragmento de tu clase
-                Fragment fragment = new SolicitudFragment();
-// Obtener el administrador de fragmentos a través de la actividad
-                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-// Definir una transacción
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-// Remplazar el contenido principal por el fragmento
-                fragmentTransaction.replace(R.id.fragmentInicioProveedor, fragment);
-                fragmentTransaction.addToBackStack(null);
-// Cambiar
-                fragmentTransaction.commit();
+                startActivity(new Intent(getActivity(), SolicitudActivity.class));
             }
         });
         RecyclerView recyclerView = view.findViewById(R.id.newsRecyclerView);
-        List<NewsItems> newsItems = new ArrayList<>();
-        for (int i=0;i<15;i++){
-            newsItems.add(new NewsItems("Maquillaje","Se te arreglara la cara".concat(String.valueOf(i)),"S/15.00"));
+        List<NewsItemsProveedor> items = new ArrayList<>();
+        for (int i = 0; i < 15; i++) {
+            items.add(new NewsItemsProveedor("Maquillaje", "Se te arreglara la cara".concat(String.valueOf(i)), "S/15.00"));
         }
-        recyclerView.setAdapter(new NewsItemsAdapter(newsItems));
+        recyclerView.setAdapter(new NewsItemsAdapterProveedor(items));
         return view;
 
     }

@@ -1,14 +1,19 @@
 package com.example.middle.Usuario.Fragments.Inicio;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.example.middle.R;
+import com.example.middle.Usuario.NewsItemsAdapterUsuario;
+import com.example.middle.Usuario.NewsItemsUsuario;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -61,6 +66,13 @@ public class ProductoFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_producto, container, false);
+        View view = inflater.inflate(R.layout.fragment_producto, container, false);
+        RecyclerView recyclerView = view.findViewById(R.id.newsRecyclerViewProductos);
+        List<NewsItemsUsuario> items = new ArrayList<>();
+        for (int i = 0; i < 15; i++) {
+            items.add(new NewsItemsUsuario("Maquillaje", "Se te arreglara la cara".concat(String.valueOf(i)), "S/15.00"));
+        }
+        recyclerView.setAdapter(new NewsItemsAdapterUsuario(items));
+        return view;
     }
 }

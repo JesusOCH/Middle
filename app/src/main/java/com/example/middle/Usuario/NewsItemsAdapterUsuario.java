@@ -1,4 +1,4 @@
-package com.example.middle.Proveedor;
+package com.example.middle.Usuario;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,11 +12,11 @@ import com.example.middle.R;
 
 import java.util.List;
 
-public class NewsItemsAdapter extends RecyclerView.Adapter<NewsItemsAdapter.NewsItemViewHolder> {
-    private List<NewsItems> newsItems;
+public class NewsItemsAdapterUsuario extends RecyclerView.Adapter<NewsItemsAdapterUsuario.NewsItemViewHolder> {
+    private List<NewsItemsUsuario> newsItemsUsuarios;
 
-    public NewsItemsAdapter(List<NewsItems> newsItems) {
-        this.newsItems = newsItems;
+    public NewsItemsAdapterUsuario(List<NewsItemsUsuario> newsItemsUsuarios) {
+        this.newsItemsUsuarios = newsItemsUsuarios;
     }
 
     @NonNull
@@ -24,7 +24,7 @@ public class NewsItemsAdapter extends RecyclerView.Adapter<NewsItemsAdapter.News
     public NewsItemViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         return new NewsItemViewHolder(
                 LayoutInflater.from(parent.getContext()).inflate(
-                        R.layout.news_items_container,
+                        R.layout.news_items_container_usuarios,
                         parent,
                         false
                 )
@@ -33,26 +33,26 @@ public class NewsItemsAdapter extends RecyclerView.Adapter<NewsItemsAdapter.News
 
     @Override
     public void onBindViewHolder(@NonNull NewsItemViewHolder holder, int position) {
-        holder.nombre.setText(newsItems.get(position).getNombre());
-        holder.descripcion.setText(newsItems.get(position).getDescripcion());
-        holder.precio.setText(newsItems.get(position).getPrecio());
+        holder.nombre.setText(newsItemsUsuarios.get(position).getNombre());
+        holder.nombreEmpresa.setText(newsItemsUsuarios.get(position).getNombreEmpresa());
+        holder.precio.setText(newsItemsUsuarios.get(position).getPrecio());
 
 
     }
 
     @Override
     public int getItemCount() {
-        return newsItems.size();
+        return newsItemsUsuarios.size();
     }
 
     class NewsItemViewHolder extends RecyclerView.ViewHolder {
 
-        private TextView nombre,descripcion, precio;
+        private TextView nombre, nombreEmpresa, precio;
 
         NewsItemViewHolder(@NonNull View itemView) {
             super(itemView);
             nombre = itemView.findViewById(R.id.nombre);
-            descripcion = itemView.findViewById(R.id.descripcion);
+            nombreEmpresa = itemView.findViewById(R.id.nombre_empresa);
             precio = itemView.findViewById(R.id.precio);
 
         }

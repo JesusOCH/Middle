@@ -3,9 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#ECECEC"
+    android:background="@color/colorWhite"
     android:layout_height="match_parent"
-    android:id="@+id/fragmentInicioProveedor"
     tools:context=".Proveedor.Fragments.InicioFragment_Proveedor">
 
     <androidx.recyclerview.widget.RecyclerView
@@ -29,7 +28,6 @@
         android:src="@drawable/ic_add"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:tint="@color/colorWhite"
-        tools:ignore="MissingConstraints" />
+        app:tint="@color/colorWhite" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

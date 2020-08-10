@@ -1,14 +1,19 @@
 package com.example.middle.Usuario.Fragments.Inicio;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.middle.Proveedor.NewsItemsProveedor;
+import com.example.middle.Proveedor.NewsItemsAdapterProveedor;
 import com.example.middle.R;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -61,6 +66,8 @@ public class TendenciasFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_tendencias, container, false);
+        View view = inflater.inflate(R.layout.fragment_producto, container, false);
+        RecyclerView recyclerView = view.findViewById(R.id.newsRecyclerViewTendencias);
+        return view;
     }
 }

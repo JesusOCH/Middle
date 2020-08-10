@@ -49,4 +49,6 @@
     <string name="categoria">Categoria</string>
     <string name="servicio">Servicio</string>
     <string name="producto">Producto</string>
+    <string name="ofrecido_por">Ofrecido Por:</string>
+    <string name="peluqueria_aqp">Peluqueria Aqp</string>
 </resources>
