@@ -22,7 +22,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class SignUp extends AppCompatActivity {
+public class    SignUp extends AppCompatActivity {
 
     Usuario usuario = new Usuario();
     private EditText nombreUsuario;

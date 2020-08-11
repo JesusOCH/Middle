@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Proveedor.SolicitudActivity"></activity>
+        <activity android:name=".Usuario.Sesion.SignUp1"></activity>
+        <activity android:name=".Proveedor.SolicitudActivity" />
         <activity android:name=".Proveedor.Sesion.ResetPassword_Proveedor" />
         <activity android:name=".Usuario.Sesion.ResetPassword" />
         <activity android:name=".SplashActivity">
