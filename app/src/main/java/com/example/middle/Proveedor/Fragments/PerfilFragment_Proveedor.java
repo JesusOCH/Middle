@@ -76,7 +76,7 @@ public class PerfilFragment_Proveedor extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_perfil__usuario, container, false);
+        View view = inflater.inflate(R.layout.fragment_perfil_proveedor, container, false);
         nombreProveedor = (TextView) view.findViewById(R.id.nombreUsuario);
         emailProveedor = (TextView) view.findViewById(R.id.emailUsuario);
         getUserInfo();
